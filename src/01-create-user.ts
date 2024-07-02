@@ -6,15 +6,15 @@ const prisma = new PrismaClient()
 async function main() {
   await prisma.user.create({
     data: {
-     email: "harkirat1@gmail.com",
-     name: "harkriat"
+     email: "amit@gmail.com",
+     name: "amit"
     }
   })
 }
 
 main()
   .then(async () => {
-    console.log("done");
+    console.log("done with the query");
     await prisma.$disconnect()
   })
   .catch(async (e) => {
